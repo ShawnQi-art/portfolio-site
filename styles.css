@@ -4,6 +4,8 @@
   --line: #d8d8d8;
   --soft: #f7f7f7;
   --header-height: 52px;
+  --category-heading-gap: clamp(24px, calc(18px + 1vw), 38px);
+  --graphic-category-heading-offset: clamp(38px, 4.6vw, 48px);
   --sans-font: "Inter", "Inter Variable", "Helvetica Neue", Arial, sans-serif;
   --serif-font: Georgia, "Times New Roman", Times, serif;
   --work-title-font: Georgia, "Times New Roman", Times, serif;
@@ -399,7 +401,15 @@ button {
   display: grid;
   grid-template-columns: 1fr;
   align-items: baseline;
-  margin-bottom: 24px;
+  margin: 0 0 var(--category-heading-gap);
+}
+
+@media (min-width: 681px) {
+  body[data-category="graphic-works"] .page-heading {
+    margin-bottom: calc(
+      var(--category-heading-gap) + var(--graphic-category-heading-offset)
+    );
+  }
 }
 
 .page-heading p {
@@ -1067,6 +1077,7 @@ button {
   .page-heading {
     grid-template-columns: 1fr;
     gap: 4px;
+    margin-bottom: 150px;
   }
 
   .matrix-gallery {
@@ -1423,20 +1434,55 @@ body[data-category="art-books"] .category-book-grid {
   }
 
   .category-book-grid {
-    grid-template-columns: 1fr;
-    gap: 42px;
+    grid-template-columns: 200px;
+    gap: 64px 0;
+    justify-content: center;
+    justify-items: center;
   }
 
   .category-book-grid-compact {
-    grid-template-columns: 1fr;
+    grid-template-columns: 200px;
+    justify-content: center;
+  }
+
+  body[data-category="art-books"] .category-book-grid {
+    grid-template-columns: 200px;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .category-book-row,
+  .book-cover-card,
+  .book-cover-card > .book-cover-frame,
+  .book-cover-card > .work-caption {
+    width: 200px;
   }
 
   .category-book-row {
-    --category-cover-height: min(72vw, 360px);
+    --category-cover-height: auto;
   }
 
   .book-cover-card {
-    --caption-space: 122px;
+    --caption-space: 0;
+    min-height: 0;
+  }
+
+  .book-cover-card > .book-cover-frame {
+    flex: none;
+    height: auto;
+  }
+
+  .book-cover-image,
+  .book-cover-image.is-landscape {
+    width: 200px;
+    max-width: 200px;
+    height: auto;
+    max-height: none;
+  }
+
+  .book-cover-card > .work-caption {
+    min-height: 0;
+    padding-top: 12px;
   }
 }
 
