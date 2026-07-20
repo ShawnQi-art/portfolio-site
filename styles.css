@@ -443,9 +443,9 @@ button {
 .work-stack img {
   display: block;
   width: 48%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  background: var(--soft);
+  height: auto;
+  object-fit: contain;
+  background: transparent;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
 }
 
@@ -1236,66 +1236,129 @@ button {
 
 .category-book-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 58px 18px;
-  align-items: end;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-auto-rows: auto;
+  gap: 58px 24px;
+  align-items: start;
   justify-content: stretch;
 }
 
 .category-book-grid-compact {
-  grid-template-columns: repeat(auto-fit, minmax(180px, 260px));
-  justify-content: start;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  justify-content: stretch;
+}
+
+body[data-category="art-books"] .category-book-grid {
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 .category-book-row {
+  --category-cover-height: clamp(260px, 26vw, 390px);
+  display: block;
+  min-width: 0;
+  width: 100%;
   max-width: none;
   overflow: visible;
 }
 
 .category-work-link {
   display: block;
+  min-width: 0;
+  width: 100%;
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
 }
 
 .category-work-button {
+  appearance: none;
   width: 100%;
   padding: 0;
   border: 0;
   background: transparent;
+  color: inherit;
+  font: inherit;
   cursor: zoom-in;
-  text-align: left;
+  text-align: center;
 }
 
 .book-cover-card {
   --caption-space: 104px;
-  position: relative;
-  display: block;
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
   width: 100%;
-  padding-bottom: var(--caption-space);
+  min-height: calc(var(--category-cover-height) + var(--caption-space));
+  height: auto;
+  margin: 0;
+  padding-bottom: 0;
   overflow: visible;
+  transform: none;
 }
 
-.book-cover-frame {
+.book-cover-card > .book-cover-frame {
+  position: relative;
   display: flex;
+  flex: 0 0 var(--category-cover-height);
   align-items: flex-end;
   justify-content: center;
   min-width: 0;
   width: 100%;
+  height: var(--category-cover-height);
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.book-cover-card .work-caption {
+.matrix-card .book-cover-frame > .book-cover-count {
   position: absolute;
-  top: calc(100% - var(--caption-space) + 10px);
-  right: 0;
-  left: 0;
+  top: var(--book-cover-count-top, 0);
+  right: var(--book-cover-count-right, 0);
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  background: #8c8c8c;
+  font-family: var(--sans-font);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: 0;
+  text-align: center;
+  pointer-events: none;
+}
+
+.book-cover-card > .work-caption {
+  position: static;
   display: grid;
   grid-template-columns: 1fr;
   gap: 2px;
   justify-items: center;
-  padding-top: 0;
+  align-content: start;
+  flex: 0 0 auto;
+  min-width: 0;
+  width: 100%;
+  min-height: var(--caption-space);
+  margin: 0;
+  padding: 10px 0 0;
+  box-sizing: border-box;
+  text-align: center;
+  transform: none;
 }
 
-.book-cover-card .work-caption span {
+.book-cover-card > .work-caption > span {
   display: block;
+  width: 100%;
+  margin: 0;
+  padding: 0 !important;
+  line-height: 1.28;
+  text-align: center;
 }
 
 .book-cover-card .work-caption span:first-child {
@@ -1317,12 +1380,23 @@ button {
 }
 
 .book-cover-image {
-  width: 100%;
+  position: static;
+  flex: 0 1 auto;
+  align-self: flex-end;
+  display: block;
+  width: auto;
   max-width: 100%;
   height: auto;
+  max-height: var(--category-cover-height);
   object-fit: contain;
   object-position: center bottom;
+  background: transparent;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+  transform: none;
+}
+
+.book-cover-image.is-landscape {
+  max-height: calc(var(--category-cover-height) / 2);
 }
 
 @media (max-width: 680px) {
@@ -1357,7 +1431,47 @@ button {
     grid-template-columns: 1fr;
   }
 
+  .category-book-row {
+    --category-cover-height: min(72vw, 360px);
+  }
+
   .book-cover-card {
     --caption-space: 122px;
   }
+}
+
+
+.category-grouped-gallery {
+  display: grid;
+  gap: clamp(64px, 8vw, 112px);
+}
+
+.category-work-group {
+  display: grid;
+  gap: 28px;
+}
+
+.category-work-group-title {
+  margin: 0;
+  font: 700 17px/1.2 var(--font-interface);
+  letter-spacing: 0;
+}
+
+.category-book-grid-grouped {
+  max-width: none;
+}
+
+@media (max-width: 700px) {
+  .category-grouped-gallery {
+    gap: 56px;
+  }
+
+  .category-work-group {
+    gap: 18px;
+  }
+}
+
+/* Commercial works are identified only through their medium line. */
+.category-work-row.commercial-work .work-caption span:nth-child(2) {
+  color: #338fe6;
 }

@@ -229,162 +229,335 @@ I hope that, when reading this book, viewers can step away from habitual ways of
     "medium": "Photographic Documentation"
   },
   {
-    "id": "paintings-2025-01",
-    "title": "Tilted Vase",
-    "category": "paintings",
-    "categoryLabel": "Paintings",
-    "year": "2024",
-    "cover": "assets/绘画/2025/倾斜的花瓶.jpg",
-    "images": [
-      "assets/绘画/2025/倾斜的花瓶.jpg"
-    ],
-    "description": "Replace this text with the description for Tilted Vase.",
-    "medium": "Acrylic"
+      "id": "paintings-2025-01",
+      "title": "Tilted Vase",
+      "zhTitle": "倾斜的花瓶",
+      "category": "paintings",
+      "categoryLabel": "Paintings",
+      "year": "2024",
+      "cover": "assets/绘画/2025/倾斜的花瓶.jpg",
+      "images": [
+          "assets/绘画/2025/倾斜的花瓶.jpg"
+      ],
+      "medium": "Acrylic",
+      "zhMedium": "丙烯",
+      "description": ""
   },
   {
-    "id": "paintings-2025-02",
-    "title": "Leg Creature",
-    "category": "paintings",
-    "categoryLabel": "Paintings",
-    "year": "2024",
-    "cover": "assets/绘画/2025/腿怪1.jpg",
-    "images": [
-      "assets/绘画/2025/腿怪1.jpg",
-      "assets/绘画/2025/腿怪2.jpg"
-    ],
-    "description": "",
-    "medium": "Acrylic"
+      "id": "paintings-2025-02",
+      "title": "Leg Creature",
+      "zhTitle": "腿怪",
+      "category": "paintings",
+      "categoryLabel": "Paintings",
+      "year": "2024",
+      "cover": "assets/绘画/2025/腿怪1.jpg",
+      "images": [
+          "assets/绘画/2025/腿怪1.jpg",
+          "assets/绘画/2025/腿怪2.jpg"
+      ],
+      "medium": "Acrylic",
+      "zhMedium": "丙烯",
+      "description": ""
   },
   {
-    "id": "paintings-2022-03",
-    "title": "Studies in Point, Line, and Plane",
-    "category": "paintings",
-    "categoryLabel": "Paintings",
-    "year": "2022",
-    "cover": "assets/绘画/2022/点线面的练习4.jpg",
-    "images": [
-      "assets/绘画/2022/点线面的练习1.jpg",
-      "assets/绘画/2022/点线面的练习4.jpg",
-      "assets/绘画/2022/点线面的练习5.jpg",
-      "assets/绘画/2022/点线面的练习6.jpg",
-      "assets/绘画/2022/点线面的练习7.jpg",
-      "assets/绘画/2022/点线面的练习8.jpg",
-      "assets/绘画/2022/点线面的练习9.jpg"
-    ],
-    "description": "",
-    "medium": "Digital"
+      "id": "paintings-2022-03",
+      "title": "Studies in Point, Line, and Plane",
+      "zhTitle": "点线面的练习",
+      "category": "paintings",
+      "categoryLabel": "Paintings",
+      "year": "2022",
+      "cover": "assets/绘画/2022/点线面的练习4.jpg",
+      "images": [
+          "assets/绘画/2022/点线面的练习1.jpg",
+          "assets/绘画/2022/点线面的练习4.jpg",
+          "assets/绘画/2022/点线面的练习5.jpg",
+          "assets/绘画/2022/点线面的练习6.jpg",
+          "assets/绘画/2022/点线面的练习7.jpg",
+          "assets/绘画/2022/点线面的练习8.jpg",
+          "assets/绘画/2022/点线面的练习9.jpg"
+      ],
+      "medium": "Digital",
+      "zhMedium": "数字",
+      "description": ""
   },
   {
-    "id": "paintings-2019-04",
-    "title": "Untitled",
-    "category": "paintings",
-    "categoryLabel": "Paintings",
-    "year": "2019",
-    "cover": "assets/绘画/2019/无题2.jpeg",
-    "images": [
-      "assets/绘画/2019/无题2.jpeg"
-    ],
-    "description": "Replace this text with the description for Untitled.",
-    "medium": "Technical Pen, Colored Pencil"
+      "id": "paintings-2019-06",
+      "title": "Healing",
+      "zhTitle": "弥合",
+      "category": "paintings",
+      "categoryLabel": "Paintings",
+      "year": "2019",
+      "cover": "assets/绘画/2019/弥合/1.JPG",
+      "images": [
+          "assets/绘画/2019/弥合/1.JPG",
+          "assets/绘画/2019/弥合/2.JPG",
+          "assets/绘画/2019/弥合/3.JPG",
+          "assets/绘画/2019/弥合/4.JPG",
+          "assets/绘画/2019/弥合/5.JPG",
+          "assets/绘画/2019/弥合/6.JPG",
+          "assets/绘画/2019/弥合/7.JPG",
+          "assets/绘画/2019/弥合/8.JPG",
+          "assets/绘画/2019/弥合/9.JPG",
+          "assets/绘画/2019/弥合/10.JPG",
+          "assets/绘画/2019/弥合/11.JPG",
+          "assets/绘画/2019/弥合/12.JPG",
+          "assets/绘画/2019/弥合/13.JPG",
+          "assets/绘画/2019/弥合/14.JPG",
+          "assets/绘画/2019/弥合/15.JPG",
+          "assets/绘画/2019/弥合/16.JPG"
+      ],
+      "medium": "Painting Series",
+      "zhMedium": "系列绘画",
+      "description": ""
   },
   {
-    "id": "paintings-2017-05",
-    "title": "Color Studies for Before Dawn",
-    "category": "paintings",
-    "categoryLabel": "Paintings",
-    "year": "2017",
-    "cover": "assets/绘画/2017/《天亮之前》彩色练习1.jpg",
-    "images": [
-      "assets/绘画/2017/《天亮之前》彩色练习1.jpg",
-      "assets/绘画/2017/《天亮之前》彩色练习2.jpg"
-    ],
-    "description": "",
-    "medium": "Technical Pen, Digital"
+      "id": "paintings-2019-04",
+      "title": "Untitled",
+      "zhTitle": "无题",
+      "category": "paintings",
+      "categoryLabel": "Paintings",
+      "year": "2019",
+      "cover": "assets/绘画/2019/无题2.jpeg",
+      "images": [
+          "assets/绘画/2019/无题2.jpeg"
+      ],
+      "medium": "Technical Pen, Colored Pencil",
+      "zhMedium": "针管笔、彩色铅笔",
+      "description": ""
   },
   {
-    "id": "graphic-works-2024-01",
-    "title": "University of Applied Arts Vienna Festival Poster",
-    "category": "graphic-works",
-    "categoryLabel": "Academic Project",
-    "year": "2024",
-    "cover": "assets/平面作品/2024/维也纳应用艺术大学艺术节海报/1.png",
-    "images": [
-      "assets/平面作品/2024/维也纳应用艺术大学艺术节海报/1.png",
-      "assets/平面作品/2024/维也纳应用艺术大学艺术节海报/2.png",
-      "assets/平面作品/2024/维也纳应用艺术大学艺术节海报/展示实拍.jpg",
-      "assets/平面作品/2024/维也纳应用艺术大学艺术节海报/维也纳应用艺术大学艺术节海报动态版.mp4"
-    ],
-    "description": "",
-    "medium": "Academic Project"
+      "id": "paintings-2017-05",
+      "title": "Color Studies for Before Dawn",
+      "zhTitle": "《天亮之前》彩色练习",
+      "category": "paintings",
+      "categoryLabel": "Paintings",
+      "year": "2017",
+      "cover": "assets/绘画/2017/《天亮之前》彩色练习1.jpg",
+      "images": [
+          "assets/绘画/2017/《天亮之前》彩色练习1.jpg",
+          "assets/绘画/2017/《天亮之前》彩色练习2.jpg"
+      ],
+      "medium": "Technical Pen, Digital",
+      "zhMedium": "针管笔、数字",
+      "description": ""
   },
   {
-    "id": "graphic-works-2022-02",
-    "title": "Becoming Pixels",
-    "category": "graphic-works",
-    "categoryLabel": "Graphic Works",
-    "year": "2022",
-    "cover": "assets/平面作品/2022/看手机的“人”.gif",
-    "images": [
-      "assets/平面作品/2022/看手机的“人”.gif"
-    ],
-    "description": "Replace this text with the description for Becoming Pixels.",
-    "medium": "Digital Media"
+      "id": "graphic-works-commercial-02",
+      "title": "Domestic Art 008",
+      "zhTitle": "国产艺术凌凌捌",
+      "category": "graphic-works",
+      "categoryLabel": "Graphic Works",
+      "year": "2024",
+      "cover": "assets/平面作品/商业设计/国产艺术凌凌捌-商业海报/cover.jpg",
+      "images": [
+          "assets/平面作品/商业设计/国产艺术凌凌捌-商业海报/cover.jpg",
+          "assets/平面作品/商业设计/国产艺术凌凌捌-商业海报/detail-1.jpg",
+          "assets/平面作品/商业设计/国产艺术凌凌捌-商业海报/detail-2.jpg",
+          "assets/平面作品/商业设计/国产艺术凌凌捌-商业海报/detail-3.jpg",
+          "assets/平面作品/商业设计/国产艺术凌凌捌-商业海报/detail-4.jpg",
+          "assets/平面作品/商业设计/国产艺术凌凌捌-商业海报/detail-5.jpg",
+          "assets/平面作品/商业设计/国产艺术凌凌捌-商业海报/detail-6.jpg",
+          "assets/平面作品/商业设计/国产艺术凌凌捌-商业海报/detail-7.jpg",
+          "assets/平面作品/商业设计/国产艺术凌凌捌-商业海报/detail-8.jpg"
+      ],
+      "medium": "Commercial Poster",
+      "zhMedium": "商业海报",
+      "badge": "Commercial Design",
+      "zhBadge": "商业设计",
+      "description": ""
   },
   {
-    "id": "graphic-works-2019-03",
-    "title": "Sky Lake",
-    "category": "graphic-works",
-    "categoryLabel": "Graphic Works",
-    "year": "2019",
-    "cover": "assets/平面作品/2019/5.jpeg",
-    "images": [
-      "assets/平面作品/2019/5.jpeg",
-      "assets/平面作品/2019/6.jpeg",
-      "assets/平面作品/2019/7.jpeg",
-      "assets/平面作品/2019/8.jpeg",
-      "assets/平面作品/2019/9.jpeg"
-    ],
-    "description": "",
-    "medium": "Photography / Digital Production"
+      "id": "graphic-works-2024-01",
+      "title": "University of Applied Arts Vienna Festival Poster",
+      "zhTitle": "维也纳应用艺术大学艺术节海报",
+      "category": "graphic-works",
+      "categoryLabel": "Academic Project",
+      "year": "2024",
+      "cover": "assets/平面作品/2024/维也纳应用艺术大学艺术节海报/1.png",
+      "images": [
+          "assets/平面作品/2024/维也纳应用艺术大学艺术节海报/1.png",
+          "assets/平面作品/2024/维也纳应用艺术大学艺术节海报/2.png",
+          "assets/平面作品/2024/维也纳应用艺术大学艺术节海报/展示实拍.jpg",
+          "assets/平面作品/2024/维也纳应用艺术大学艺术节海报/维也纳应用艺术大学艺术节海报动态版.mp4"
+      ],
+      "medium": "Academic Project",
+      "zhMedium": "学术项目",
+      "description": ""
   },
   {
-    "id": "sculpture-2024-01",
-    "title": "The Love Knot",
-    "category": "sculpture",
-    "categoryLabel": "Sculptural Works",
-    "year": "2024",
-    "cover": "assets/立体作品/2024/纸雕塑-同心结/cover.jpg",
-    "images": [
-      "assets/立体作品/2024/纸雕塑-同心结/cover.jpg",
-      "assets/立体作品/2024/纸雕塑-同心结/1.jpg",
-      "assets/立体作品/2024/纸雕塑-同心结/2.jpg",
-      "assets/立体作品/2024/纸雕塑-同心结/3.jpg"
-    ],
-    "description": `The Love Knot is a sculptural work inspired by the traditional Chinese Tongxin Jie, or “love knot.”
-
-In Chinese culture, the Tongxin Jie is a traditional knot ornament that symbolizes love, union, and lasting companionship. It is not merely a decorative pattern, but a structural image formed through lines, knots, interweaving, and connection. What interests me is the relationship implied by this structure: two independent parts approach each other, cross, pull, and eventually form a new whole.
-
-The basic material of this work is white paper plates. Originally, paper plates are ordinary, lightweight, and disposable objects. After being repeatedly connected in large quantities, they gradually form two large rope-like structures. These two paper structures then cross, intertwine, and gather in space, eventually forming a giant knot. The contrast between the lightness of the material and the volume of the final structure gives the work a state between fragility and solidity.
-
-I kept the original white color of the paper plates in order to reduce decorative distraction and direct attention to the structure, rhythm, and material itself. The repeated paper-plate units create a visual effect reminiscent of scales, bones, or growing tissue, making the knot appear both light and dense, both soft and tense. It is not a smooth, complete, or overly symbolized image of love, but a spatial structure supported by many small connections.
-
-For me, The Love Knot is not simply a direct expression of “love,” but a material translation of traditional knot language. Through the ordinary material of paper plates, I wanted to reconsider the structural relationships within the Tongxin Jie — connection, interweaving, and companionship — and transform them into a form that can be seen, approached, and re-perceived through scale, weight, repeated labor, and spatial relationships.
-
-The work was presented in EIN HAUFEN LIEBE / A PILE OF LOVE: Experiments in Sculptural Design, a group exhibition by the Klasse für Grafik Design at the University of Applied Arts Vienna. The exhibition took place at Schloss Neugebäude, Vienna, from 17 to 28 January 2024.`,
-    "medium": "Paper Sculpture"
+      "id": "graphic-works-commercial-01",
+      "title": "HER",
+      "zhTitle": "HER",
+      "category": "graphic-works",
+      "categoryLabel": "Graphic Works",
+      "year": "2024",
+      "cover": "assets/平面作品/商业设计/HER-商业海报/cover.jpg",
+      "images": [
+          "assets/平面作品/商业设计/HER-商业海报/cover.jpg"
+      ],
+      "medium": "Commercial Poster",
+      "zhMedium": "商业海报",
+      "badge": "Commercial Design",
+      "zhBadge": "商业设计",
+      "description": ""
+  },
+  {
+      "id": "graphic-works-commercial-03",
+      "title": "In Memory of the Days We Were Hammered Together",
+      "zhTitle": "纪念一起被“锤”的岁月",
+      "category": "graphic-works",
+      "categoryLabel": "Graphic Works",
+      "year": "2024",
+      "cover": "assets/平面作品/商业设计/纪念一起被“锤”的岁月-商业海报/9972CC3E-4694-4258-A293-2C92A1A5E5D8_1_105_c.jpeg",
+      "images": [
+          "assets/平面作品/商业设计/纪念一起被“锤”的岁月-商业海报/9972CC3E-4694-4258-A293-2C92A1A5E5D8_1_105_c.jpeg"
+      ],
+      "medium": "Commercial Poster",
+      "zhMedium": "商业海报",
+      "badge": "Commercial Design",
+      "zhBadge": "商业设计",
+      "description": ""
+  },
+  {
+      "id": "graphic-works-2022-02",
+      "title": "Becoming Pixels",
+      "zhTitle": "成为像素",
+      "category": "graphic-works",
+      "categoryLabel": "Graphic Works",
+      "year": "2022",
+      "cover": "assets/平面作品/2022/看手机的“人”.gif",
+      "images": [
+          "assets/平面作品/2022/看手机的“人”.gif"
+      ],
+      "medium": "Digital Media",
+      "zhMedium": "数字媒体",
+      "description": ""
+  },  {
+      "id": "graphic-works-2024-09",
+      "title": "What Should I Do",
+      "zhTitle": "要我怎么办",
+      "category": "graphic-works",
+      "categoryLabel": "Graphic Works",
+      "year": "2022",
+      "cover": "assets/平面作品/要我怎么办，个人海报.JPG",
+      "images": [
+          "assets/平面作品/要我怎么办，个人海报.JPG"
+      ],
+      "medium": "Personal Poster",
+      "zhMedium": "个人海报",
+      "description": ""
+  },
+  {
+      "id": "graphic-works-2024-10",
+      "title": "Self-Redemption",
+      "zhTitle": "自我救赎",
+      "category": "graphic-works",
+      "categoryLabel": "Graphic Works",
+      "year": "2022",
+      "cover": "assets/平面作品/自我救赎，个人海报.JPG",
+      "images": [
+          "assets/平面作品/自我救赎，个人海报.JPG"
+      ],
+      "medium": "Personal Poster",
+      "zhMedium": "个人海报",
+      "description": ""
+  },
+  {
+      "id": "graphic-works-2024-04",
+      "title": "Forbidden City Summer Set",
+      "zhTitle": "故宫夏日套装",
+      "category": "graphic-works",
+      "categoryLabel": "Graphic Works",
+      "year": "2019",
+      "cover": "assets/平面作品/故宫夏日套装/1.JPG",
+      "images": [
+          "assets/平面作品/故宫夏日套装/1.JPG",
+          "assets/平面作品/故宫夏日套装/2.JPG",
+          "assets/平面作品/故宫夏日套装/3.JPG",
+          "assets/平面作品/故宫夏日套装/4.JPG"
+      ],
+      "medium": "Cultural Product Design",
+      "zhMedium": "文创产品设计",
+      "description": ""
+  },
+  {
+      "id": "graphic-works-2024-11",
+      "title": "No. 7 Jam Shop",
+      "zhTitle": "七号果酱铺",
+      "category": "graphic-works",
+      "categoryLabel": "Graphic Works",
+      "year": "2019",
+      "cover": "assets/平面作品/七号果酱铺，活动海报.JPG",
+      "images": [
+          "assets/平面作品/七号果酱铺，活动海报.JPG"
+      ],
+      "medium": "Event Poster",
+      "zhMedium": "活动海报",
+      "description": ""
+  },
+  {
+      "id": "graphic-works-2019-03",
+      "title": "Sky Lake",
+      "zhTitle": "天空湖",
+      "category": "graphic-works",
+      "categoryLabel": "Graphic Works",
+      "year": "2019",
+      "cover": "assets/平面作品/2019/5.jpeg",
+      "images": [
+          "assets/平面作品/2019/5.jpeg",
+          "assets/平面作品/2019/6.jpeg",
+          "assets/平面作品/2019/7.jpeg",
+          "assets/平面作品/2019/8.jpeg",
+          "assets/平面作品/2019/9.jpeg"
+      ],
+      "medium": "Photography / Digital Production",
+      "zhMedium": "摄影/数字制作",
+      "description": ""
+  },
+  {
+      "id": "graphic-works-2024-05",
+      "title": "Nostril",
+      "zhTitle": "鼻孔",
+      "category": "graphic-works",
+      "categoryLabel": "Graphic Works",
+      "year": "2018",
+      "cover": "assets/平面作品/鼻孔，书籍封面.jpg",
+      "images": [
+          "assets/平面作品/鼻孔，书籍封面.jpg"
+      ],
+      "medium": "Book Cover",
+      "zhMedium": "书籍封面",
+      "description": ""
+  },
+  {
+      "id": "sculpture-2024-01",
+      "title": "The Love Knot",
+      "zhTitle": "同心结",
+      "category": "sculpture",
+      "categoryLabel": "Sculptural Works",
+      "year": "2024",
+      "cover": "assets/立体作品/2024/纸雕塑-同心结/cover.jpg",
+      "images": [
+          "assets/立体作品/2024/纸雕塑-同心结/cover.jpg",
+          "assets/立体作品/2024/纸雕塑-同心结/1.jpg",
+          "assets/立体作品/2024/纸雕塑-同心结/2.jpg",
+          "assets/立体作品/2024/纸雕塑-同心结/3.jpg"
+      ],
+      "medium": "Paper Sculpture",
+      "zhMedium": "纸雕塑",
+      "description": "The Love Knot is a sculptural work inspired by the traditional Chinese Tongxin Jie, or “love knot.”\n\nIn Chinese culture, the Tongxin Jie is a traditional knot ornament that symbolizes love, union, and lasting companionship. It is not merely a decorative pattern, but a structural image formed through lines, knots, interweaving, and connection. What interests me is the relationship implied by this structure: two independent parts approach each other, cross, pull, and eventually form a new whole.\n\nThe basic material of this work is white paper plates. Originally, paper plates are ordinary, lightweight, and disposable objects. After being repeatedly connected in large quantities, they gradually form two large rope-like structures. These two paper structures then cross, intertwine, and gather in space, eventually forming a giant knot. The contrast between the lightness of the material and the volume of the final structure gives the work a state between fragility and solidity.\n\nI kept the original white color of the paper plates in order to reduce decorative distraction and direct attention to the structure, rhythm, and material itself. The repeated paper-plate units create a visual effect reminiscent of scales, bones, or growing tissue, making the knot appear both light and dense, both soft and tense. It is not a smooth, complete, or overly symbolized image of love, but a spatial structure supported by many small connections.\n\nFor me, The Love Knot is not simply a direct expression of “love,” but a material translation of traditional knot language. Through the ordinary material of paper plates, I wanted to reconsider the structural relationships within the Tongxin Jie — connection, interweaving, and companionship — and transform them into a form that can be seen, approached, and re-perceived through scale, weight, repeated labor, and spatial relationships.\n\nThe work was presented in EIN HAUFEN LIEBE / A PILE OF LOVE: Experiments in Sculptural Design, a group exhibition by the Klasse für Grafik Design at the University of Applied Arts Vienna. The exhibition took place at Schloss Neugebäude, Vienna, from 17 to 28 January 2024."
   }
 ].map(withImageFallbacks);
 
 const supportedLanguages = ["en", "zh"];
 const defaultLanguage = "en";
-
-const languageStorageKey = "shawnqi-site-language";
+const languageStorageKey = "portfolio-language";
 
 const getStoredLanguage = () => {
   try {
-    return localStorage.getItem(languageStorageKey);
+    return localStorage.getItem(languageStorageKey) || defaultLanguage;
   } catch (error) {
-    return null;
+    return defaultLanguage;
   }
 };
 
@@ -517,7 +690,7 @@ const workTranslations = {
       title: "倾斜的花瓶",
       categoryLabel: "绘画",
       medium: "丙烯",
-      description: "在这里添加《倾斜的花瓶》的作品介绍。"
+      description: ""
     },
     "paintings-2025-02": {
       title: "腿怪",
@@ -531,11 +704,17 @@ const workTranslations = {
       medium: "数字",
       description: ""
     },
+    "paintings-2019-06": {
+      title: "弥合",
+      categoryLabel: "绘画",
+      medium: "系列绘画",
+      description: ""
+    },
     "paintings-2019-04": {
       title: "无题",
       categoryLabel: "绘画",
       medium: "针管笔、彩色铅笔",
-      description: "在这里添加《无题》的作品介绍。"
+      description: ""
     },
     "paintings-2017-05": {
       title: "《天亮之前》彩色练习",
@@ -681,9 +860,11 @@ const localizeWork = (work, language = getCurrentLanguage()) => {
 
   return {
     ...work,
-    title: translation.title || work.title,
+    title: translation.title || (language === "zh" && work.zhTitle ? work.zhTitle : work.title),
     categoryLabel: translation.categoryLabel || localizedCategory?.label || work.categoryLabel,
-    medium: translation.medium || work.medium,
+    medium: translation.medium || (language === "zh" && work.zhMedium ? work.zhMedium : work.medium),
+    group: language === "zh" && work.zhGroup ? work.zhGroup : work.group,
+    badge: language === "zh" && work.zhBadge ? work.zhBadge : work.badge,
     description: Object.prototype.hasOwnProperty.call(translation, "description")
       ? translation.description
       : work.description

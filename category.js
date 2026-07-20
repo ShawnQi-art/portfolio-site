@@ -43,6 +43,58 @@ const renderCoverMedia = (source, label) => {
   return `<img class="book-cover-image" src="${source}" alt="${escapeHtml(label)}" />`;
 };
 
+
+const syncCoverOrientationClasses = () => {
+  gallery.querySelectorAll(".book-cover-image").forEach((media) => {
+    const alignCountBadge = () => {
+      const frame = media.closest(".book-cover-frame");
+      const count = frame?.querySelector(".book-cover-count");
+      if (!frame || !count) return;
+
+      const frameRect = frame.getBoundingClientRect();
+      const mediaRect = media.getBoundingClientRect();
+      const topOffset = mediaRect.top - frameRect.top;
+      const rightOffset = frameRect.right - mediaRect.right;
+      frame.style.setProperty("--book-cover-count-top", `${Math.max(0, topOffset)}px`);
+      frame.style.setProperty("--book-cover-count-right", `${Math.max(0, rightOffset)}px`);
+    };
+
+    const applyOrientation = () => {
+      const width = media.videoWidth || media.naturalWidth || 0;
+      const height = media.videoHeight || media.naturalHeight || 0;
+      if (!width || !height) return;
+      media.classList.toggle("is-landscape", width > height * 1.08);
+      requestAnimationFrame(alignCountBadge);
+    };
+
+    if (typeof ResizeObserver === "function" && media.closest(".book-cover-frame")?.querySelector(".book-cover-count")) {
+      const observer = new ResizeObserver(alignCountBadge);
+      observer.observe(media);
+      observer.observe(media.closest(".book-cover-frame"));
+    }
+
+    if ((media.tagName === "IMG" && media.complete) || (media.tagName === "VIDEO" && media.readyState >= 1)) {
+      applyOrientation();
+      return;
+    }
+
+    media.addEventListener(media.tagName === "VIDEO" ? "loadedmetadata" : "load", applyOrientation, { once: true });
+  });
+};
+
+const getOriginalWorkIndex = (work) => {
+  if (!Array.isArray(works)) return 0;
+  const index = works.findIndex((item) => item.id === work.id);
+  return index >= 0 ? index : 0;
+};
+
+const getSortedCategoryWorks = (items) =>
+  [...items].sort((a, b) => {
+    const yearDiff = Number(b.year || 0) - Number(a.year || 0);
+    if (yearDiff) return yearDiff;
+    return getOriginalWorkIndex(a) - getOriginalWorkIndex(b);
+  });
+
 const renderPreviewMedia = (source, label) => {
   if (isVideoMedia(source)) {
     return `
@@ -118,6 +170,7 @@ const makeSingleWorkPreview = (singleImageWorks) => {
 
 const renderCategoryWork = (work) => {
   const isSingleImageWork = work.images.length === 1;
+  const additionalImageCount = Math.max(0, work.images.length - 1);
   const tagName = isSingleImageWork ? "button" : "a";
   const actionAttributes = isSingleImageWork
     ? `type="button" data-work-id="${work.id}"`
@@ -127,10 +180,11 @@ const renderCategoryWork = (work) => {
     : "category-work-link matrix-card book-cover-card";
 
   return `
-    <article class="category-work-row category-book-row">
+    <article class="category-work-row category-book-row${work.badge ? " commercial-work" : ""}">
       <${tagName} class="${actionClass}" ${actionAttributes}>
         <span class="book-cover-frame">
           ${renderCoverMedia(work.cover, work.title)}
+          ${additionalImageCount ? `<span class="book-cover-count" aria-label="${escapeHtml(`${additionalImageCount} additional images`)}">+${additionalImageCount}</span>` : ""}
         </span>
         <span class="work-caption">
           <span>${escapeHtml(work.title)}</span>
@@ -142,21 +196,42 @@ const renderCategoryWork = (work) => {
   `;
 };
 
+const renderGroupedCategory = (categoryWorks) => {
+  const grouped = categoryWorks.reduce((result, work) => {
+    const group = work.group || getCategoryTitle();
+    if (!result.has(group)) result.set(group, []);
+    result.get(group).push(work);
+    return result;
+  }, new Map());
+
+  gallery.className = "category-grouped-gallery";
+  gallery.innerHTML = [...grouped.entries()].map(([group, groupWorks]) => `
+    <section class="category-work-group">
+      <h2 class="category-work-group-title">${escapeHtml(group)}</h2>
+      <div class="category-book-grid category-book-grid-grouped">
+        ${getSortedCategoryWorks(groupWorks).map((work) => renderCategoryWork(work)).join("")}
+      </div>
+    </section>
+  `).join("");
+};
+
 const renderCategory = () => {
   if (!gallery) return;
-  const categoryWorks = getCategoryWorks();
+  const categoryWorks = getSortedCategoryWorks(getCategoryWorks());
   if (pageHeadingTitle) {
     pageHeadingTitle.textContent = getCategoryTitle();
   }
   document.title = `${getCategoryTitle()} | Shawn Qi`;
 
   const singleImageWorks = categoryWorks.filter((work) => work.images.length === 1);
+
   const gridClass = categoryWorks.length <= 3
     ? "category-book-grid category-book-grid-compact"
     : "category-book-grid";
 
   gallery.className = gridClass;
   gallery.innerHTML = categoryWorks.map((work) => renderCategoryWork(work)).join("");
+  syncCoverOrientationClasses();
 
   if (singleImageWorks.length) {
     makeSingleWorkPreview(singleImageWorks);
